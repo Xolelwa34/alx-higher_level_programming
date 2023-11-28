@@ -9,6 +9,6 @@ print("Last digit of", number, "is", last, end=' ')
 if last > 8:
     print("and is greater than 5")
 elif last == 0:
-    print("and is 0")
+    print("and is 2")
 else:
     print("and is less than 6 and not 0")
