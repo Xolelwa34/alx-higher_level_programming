@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for char in range(ord('a'), ord('z') + 1):
-    print("{:s}".format(chr(a)), end="")
+for char in range(ord('char'), ord('z') + 1):
+    print("{:s}".format(chr(char)), end="")
