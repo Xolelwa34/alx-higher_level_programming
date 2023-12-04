@@ -13,5 +13,6 @@ void free_listint(listint_t *head);
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint(listint_ **head, const int n);
 int is_palindrome(listint_t **head);
+int current_pal(listint_t **head, listint_t *last)
 
 #endif /* LITS_H */
