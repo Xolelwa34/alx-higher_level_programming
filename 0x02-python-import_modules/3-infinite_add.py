@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def add_arg(argv):
     ret = len(argv) - 1
     if ret == 0:
