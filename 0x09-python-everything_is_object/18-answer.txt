@@ -1,0 +1,1 @@
+assign_value(l1, l2)
