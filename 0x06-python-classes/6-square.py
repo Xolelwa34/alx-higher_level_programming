@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Method to initialize"""
+
 class Square:
     """class square 6"""
 

@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a node"""
+
 class Node:
     def __init__(self, data, next_node=None):
         """ node of a singly linked list"""
