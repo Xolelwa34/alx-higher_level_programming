@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a node"""
+"""Defines a node of a singly linked list"""
 
 class Node:
     def __init__(self, data, next_node=None):
