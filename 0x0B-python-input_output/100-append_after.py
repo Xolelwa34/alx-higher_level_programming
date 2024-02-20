@@ -9,6 +9,7 @@ def append_after(filename="", search_string="", new_string=""):
         """filename (str, optional): name of file. Defaults to "".
         search_string (str): The string to search for within the file.
         new_string (str): The string to insert."""
+        
     with open(filename, "r") as f:
         text = f.readlines()
 
