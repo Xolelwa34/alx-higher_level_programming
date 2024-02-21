@@ -1,22 +1,19 @@
 #!/usr/bin/python3
-"""Defines a text file insertion."""
+"""Defines append after"""
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """Method to insert a line of texts to a file"""
+	"""Method to search and update"""
+	read = []
+	with open(filename, "r", encoding="utf-8") as f:
+		read = f.readlines()
+		index = 0
 
-    Args:
-        """filename (str, optional): name of file. Defaults to "".
-        search_string (str): The string to search for within the file.
-        new_string (str): The string to insert."""
-        
-    with open(filename, "r") as f:
-        text = f.readlines()
+		while index < len(read):
+			if search_string in read[index]:
+				read[index:index + 1] = [read[index], new_string]
+				index += 1
+			index += 1
 
-    with open(filename, "w") as fo:
-        s = ""
-        for line in text:
-            s += line
-            if search_string in line:
-                s += new_string
-        fo.write(s)
+	with open(filename, "w", encoding="utf-8") as file:
+		file.writelines(read)
