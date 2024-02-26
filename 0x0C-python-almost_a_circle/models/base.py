@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define Base class."""
+"""Defines a Base class."""
 from json import dumps, loads
 import csv
 
