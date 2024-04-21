@@ -4,39 +4,38 @@
 
 /**
  * insert_node -Inserts a number into a singly linked list_t
- * @h: pointer to head
- * @num: value 
+ * @head: pointer to head
+ * @number: value
  *
  * Return: the address of the new node,0 if failed
  */
-
-listint_t *insert_node(listint_t **head, int num)
+listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *new, *traverse;
+	listint_t *new, *prev;
 	unsigned int index = 0, i = 0;
-	if (h == NULL)
+	if (head == NULL)
 		return (NULL);
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = num;
+	new->n = number;
 	if (index == 0)
 	{
-		new->next = *h;
-		*h = new;
+		new->next = *head;
+		*head = new;
 		return (new);
 	}
-	traverse = *h;
-	while (i != index - 1 && traverse != NULL)
+	prev = *head;
+	while (i != index - 1 && prev != NULL)
 	{
-		traverse = traverse->next;
+		prev = prev->next;
 		i++;
 	}
 
-	if (i == index - 1 && traverse != NULL)
+	if (i == index - 1 && prev != NULL)
 	{
-		new->next = traverse->next;
-		traverse->next = new;
+		new->next = prev->next;
+		prev->next = new;
 		return (new);
 	}
 	return (NULL);
