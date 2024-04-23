@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 module.exports = square;
 
 const Rectangle = require('./4-rectangle');
