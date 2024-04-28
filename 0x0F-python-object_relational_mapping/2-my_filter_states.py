@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Takes argument and display all values in the states."""
+"""Takes argument and display all values in the states."""
 
 import sys
 import MySQLdb
